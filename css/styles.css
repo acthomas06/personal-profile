@@ -1,0 +1,54 @@
+body {
+	font-family: "Trebuchet", "Helvetica";
+	background-color: #1353a9;
+}
+
+header {
+	height: 50px;
+	border-bottom: 1px solid black;
+}
+
+div {
+	display: block;
+}
+
+a {
+	text-decoration: none;
+}
+
+section {
+	display: block;
+}
+
+header#title_top {
+	font-family: "Weltron2", "Weltsp";
+	padding-bottom: 0px;
+}
+div.title {
+	top: 0;
+	right: 0;
+	padding-right: 5px;
+	padding-top: 15px;
+	position: absolute;
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 30px;
+	letter-spacing: 2px;
+	float: right;
+}
+
+div#master_menu ul#navigate {
+	margin: 0 auto;
+	list-style-type: none;
+	padding-top: 20px;
+}
+
+div#master_menu ul#navigate li {
+	display: inline;
+	padding: 20px;
+}
+
+section#primary {
+	width: 50%;
+	background-image: url (img/lazy.jpg);
+}
