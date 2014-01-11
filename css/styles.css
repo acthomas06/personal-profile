@@ -1,11 +1,12 @@
 body {
 	font-family: "Trebuchet", "Helvetica";
-	background-color: #1353a9;
+	background-image: url('../img/lazy.jpg');
+	background-size: cover;
+	background-color: #f5f5f5;
 }
 
 header {
 	height: 50px;
-	border-bottom: 1px solid black;
 }
 
 div {
@@ -13,6 +14,8 @@ div {
 }
 
 a {
+	display: inline-block;
+	color: black;
 	text-decoration: none;
 }
 
@@ -20,27 +23,87 @@ section {
 	display: block;
 }
 
-header#title_top {
-	font-family: "Weltron2", "Weltsp";
-	padding-bottom: 0px;
-}
 div.title {
 	top: 0;
 	right: 0;
-	padding-right: 5px;
-	padding-top: 15px;
+	padding-right: 10px;
+	padding-top: 5px;
 	position: absolute;
 	text-transform: uppercase;
+	font-family: "Weltron 2001";
 	font-weight: 600;
-	font-size: 30px;
+	font-size: 25px;
 	letter-spacing: 2px;
 	float: right;
 }
 
-div#master_menu ul#navigate {
+div.title a:hover {	
+	font-size: 26px;
+}
+
+ul#navigate {
 	margin: 0 auto;
 	list-style-type: none;
-	padding-top: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border: 1px solid black;
+	background-color: #f5f5f5;
+	opacity: .8;
+	border-radius: 10px;
+}
+
+ul#navigate li.home ul {
+	list-style: none;
+	background-color: #f5f5f5;
+	background: rgba(255,255,255,0);
+	left: -9999px;
+	position: absolute;
+}
+
+ul#navigate li.home:hover ul {
+	display: block;
+}
+
+ul#navigate li.home ul a {
+	white-space: nowrap;
+}
+
+ul#navigate ul li {
+	padding-top: 1px;
+	float: none;
+}
+
+ul#navigate li.home:hover a{
+	padding: none;
+	background-color: gray;
+	border: 1px solid white;
+	border-radius: 10px;
+}
+
+ul#navigate li:hover a {
+	opacity: 1;
+	text-decoration: underline;
+}
+
+ul#navigate li:hover ul {
+	margin: 0 auto;
+	border: 1px solid black;
+	border-radius: 10px;
+	padding-left: 10px;
+	left: 0;
+}
+
+ul#navigate li:hover ul a {
+	cursor: auto;
+	opacity: .7;
+	text-decoration: none;
+}
+
+ul#navigate li:hover ul li a:hover {
+	background-color: gray;
+	border: 1px solid white;
+	border-radius: 10px;
+	opacity: .5;
 }
 
 div#master_menu ul#navigate li {
@@ -48,7 +111,39 @@ div#master_menu ul#navigate li {
 	padding: 20px;
 }
 
-section#primary {
-	width: 50%;
-	background-image: url (img/lazy.jpg);
+div#master_menu ul#navigate li a {
+	opacity: 1;
+	color: black;
+	outline: 0;
+}
+
+div#master_menu {
+	z-index: 5;
+	width: 100%;
+}
+
+div#master_menu a:hover {
+	cursor: pointer;	
+	text-decoration: underline;
+}
+
+section#primary{
+	width: 25%;
+	opacity: .7;
+	float: right;
+	margin: 0 auto;
+	min-height: 600px;
+	display: block;
+	border: 1px solid black;
+	border-radius: 10px;
+	background-color: white;
+}
+
+section#primary div.sectitle {
+	margin: 0 auto;
+	font-family: "Weltron 2001";
+	font-size: 30px;
+	letter-spacing: 2px;
+	display: block;
+	text-align: center;
 }

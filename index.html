@@ -1,25 +1,60 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<script type="text/javascript" href="http://code.jquery.com/jquery-1.10.2.js"></script>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.js"></script>
 		<link rel="stylesheet" type="text/css" href="css/styles.css" />
+		<title>Andrew Thomas</title>
 	</head>
 	<body>
 		<header id="title_top">
 			<div id="master_menu">
 				<ul id="navigate">
-					<li class="home"><a href="/about">About Me</a></li>
-					<li class="home"><a href="/projects">Projects</a></li>
-					<li class="home"><a href="/contact">Contact Me</a></li>
+					<li class="home">
+						<a href="#">About Me</a>
+						<ul>
+							<li class="menu_item"><a href="#">Husband</a></li>
+							<li class="menu_item"><a href="#">Coder</a></li>
+							<li class="menu_item"><a href="#">Mormon</a></li>
+						</ul>
+					</li>
+					<li class="home">
+						<a href="#">Projects</a>
+						<ul>
+							<li class="menu_item"><a href="#">Websites</a></li>
+							<li class="menu_item"><a href="#">Logos</a></li>
+						</ul>
+					</li>
+					<li class="home">
+						<a href="#">Contact Me</a>
+						<ul>
+							<li class="menu_item"><a href="#">Email</a></li>
+							<li class="menu_item"><a href="#">Twitter</a></li>
+							<li class="menu_item"><a href="#">Facebook</a></li>
+						</ul>
+					</li>
 				</ul>
 			</div>
-			<div class="title">Andrew Thomas</div>
+			<script>
+				$("li").hover(
+					function() {
+						$('#primary').append( $("<p>Hello</p>") );}, 
+						function() {
+							$('#primary').remove( $("p:last") );}
+					});
+			</script>
+			<div class="title"><a href="#">Andrew Thomas</a></div>
 		</header>
 		<section id="primary">
-			
+			<div class="sectitle">
+				<p>About Me</p>
+			</div>
+			<div class="content">
+				<blockquote>
+					<p>A little about me...</p>
+				</blockquote>	
+			</div>
 		</section>
-		<section id="secondary">
-
-		</section>
+		<footer>
+	</footer>
 	</body>
 </html>
