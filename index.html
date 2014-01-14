@@ -1,60 +1,91 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.js"></script>
+		<script type="text/javascript" src="js/jquery-1.4.4.min.js"></script>
+		<script type="text/javascript" src="js/jquery.reveal.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/reveal.css" />
 		<link rel="stylesheet" type="text/css" href="css/styles.css" />
 		<title>Andrew Thomas</title>
 	</head>
 	<body>
-		<header id="title_top">
+		<header>
 			<div id="master_menu">
 				<ul id="navigate">
 					<li class="home">
-						<a href="#">About Me</a>
-						<ul>
-							<li class="menu_item"><a href="#">Husband</a></li>
-							<li class="menu_item"><a href="#">Coder</a></li>
-							<li class="menu_item"><a href="#">Mormon</a></li>
-						</ul>
+						<a href="#" class="reveal-link" data-reveal-id="aboutModal">About Me</a>
 					</li>
 					<li class="home">
-						<a href="#">Projects</a>
-						<ul>
-							<li class="menu_item"><a href="#">Websites</a></li>
-							<li class="menu_item"><a href="#">Logos</a></li>
-						</ul>
+						<a href="#" class="reveal-link" data-reveal-id="projectModal">Projects</a>
 					</li>
 					<li class="home">
-						<a href="#">Contact Me</a>
-						<ul>
-							<li class="menu_item"><a href="mailto:acthomas06@gmail.com?Subject=Greetings">Email</a></li>
-							<li class="menu_item"><a href="#">Twitter</a></li>
-							<li class="menu_item"><a href="#">Facebook</a></li>
-						</ul>
+						<a href="#" class="reveal-link" data-reveal-id="contactModal">Contact Me</a>
 					</li>
 				</ul>
 			</div>
-			<script>
-				$("li").hover(
-					function() {
-						$('#primary').append( $("<p>Hello</p>") );}, 
-						function() {
-							$('#primary').remove( $("p:last") );}
-					});
-			</script>
-			<div class="title"><a href="#">Andrew Thomas</a></div>
+			<div class="title">
+				<a href="#">Andrew Thomas</a>
+			</div>
 		</header>
-		<section id="primary">
-			<div class="sectitle">
-				<p>About Me</p>
-			</div>
-			<div class="content">
-				<blockquote>
-					<p>A little about me...</p>
-				</blockquote>	
-			</div>
-		</section>
-		<footer>
-	</footer>
+
+		<!-- 'About Me' Reveal Modal Begins -->
+		<div id="aboutModal" class="reveal-modal large" data-reveal> 
+			<section id="primary">
+				<div class="sectitle">
+					<p>About Me</p>
+				</div>
+				<div class="content">
+					<ul>
+						<br>
+						<li class="menu_item"><a href="#">Husband</a></li>
+						<br>
+						<li class="menu_item"><a href="#">Coder</a></li>
+						<br>
+						<li class="menu_item"><a href="#">Mormon</a></li>
+					</ul>
+				</div>
+			</section>
+			<a class="close-reveal-modal">&#215;</a>
+		</div>
+		<!-- End 'About Me' Reveal Modal -->
+
+		<!-- 'Projects' Reveal Modal Begins -->
+		<div id="projectModal" class="reveal-modal large" data-reveal>
+			<section id="primary">
+				<div class="sectitle">
+					<p>Projects</p>
+				</div>
+				<div class="content">
+					<ul>
+						<br>
+						<li class="menu_item"><a href="#">Websites</a></li>
+						<br>
+						<li class="menu_item"><a href="#">Logos</a></li>
+					</ul>
+				</div>
+			</section>
+			<a class="close-reveal-modal">&#215;</a>
+		</div>
+		<!-- End 'Project' Reveal Modal -->
+
+		<!-- 'Contact' Reveal Modal Begins -->
+		<div id="contactModal" class="reveal-modal large" data-reveal>
+			<section id="primary">
+				<div class="sectitle">
+					<p>Contact Me!</p>
+				</div>
+				<div class="content">
+					<ul>
+						<br>
+						<li class="menu_item"><a href="mailto:acthomas06@gmail.com?Subject=Greetings">Email</a></li>
+						<br>
+						<li class="menu_item"><a href="#">Twitter</a></li>
+						<br>
+						<li class="menu_item"><a href="#">Facebook</a></li>
+					</ul>
+				</div>
+			</section>
+			<a class="close-reveal-modal">&#215;</a>
+		</div>
+		<!-- End 'Contact' Reveal Modal -->
 	</body>
 </html>
