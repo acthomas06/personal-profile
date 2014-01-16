@@ -20,24 +20,31 @@ section {
 }
 
 div.title {
-	top: 0;
-	right: 0;
-	display: inline-block;
-	padding-left: 10px;
-	padding-right: 10px;
-	padding-top: 5px;
+	margin: 0 auto;
+	min-height: 50px;
 	position: absolute;
-	text-transform: uppercase;
-	font-family: "Weltron 2001";
-	font-weight: 600;
-	font-size: 25px;
-	font-style: italic;
-	letter-spacing: 10px;
+	display: block;
 	float: right;
 }
 
-div.title a:hover {	
-	font-size: 26px;
+div.title img {
+	height: 80%;
+	float: right;
+	position: absolute;
+	left: 1038px;
+	top: 590px;
+	background-color: #f5f5f5;
+}
+
+div.title img a {
+	display: block;
+	position: absolute;
+	float: right;
+}
+
+div.title img:hover {
+	opacity: .8;
+
 }
 
 
@@ -45,30 +52,35 @@ ul#navigate {
 	margin: 0 auto;
 	float: right;
 	list-style-type: none;
-	padding-top: 20px;
+	padding-top: 50px;
 	padding-bottom: 20px;
+	padding-right: 30px;
+	padding-left: 30px;
 	border: 1px solid black;
-	background-color: #f5f5f5;
-	min-width: 500px;
-	min-height: 600px;
-	width: 40%;
-	opacity: .8;
 	border-radius: 10px;
+	background-color: #f5f5f5;
+	min-width: 450px;
+	min-height: 560px;
+	width: 30%;
+	opacity: .8;
 }
 
 ul#navigate li.home {
-	display: block;
+	width: 100%;
+	margin: 0 auto;
 }
 
 ul#navigate li.home a {
 	margin: 0 auto;
+	background-color: white;
+	font-family: "Weltron 2001";
+	font-weight: 600;
 	text-align: center;
+	padding-top: 40px;
+	padding-bottom: 40px;
 	border: 1px solid black;
 	border-radius: 10px;
 	width: 100%;
-	padding-top: 30px;
-	padding-bottom: 3px;
-	background-color: #1d4962;
 }
 
 ul#navigate li.home ul a {
@@ -77,10 +89,11 @@ ul#navigate li.home ul a {
 
 ul#navigate li.home a:hover{
 	border-radius: 10px;
-	background-color: gray;
+	opacity: 1;
+	background-color: #41a8e1;
 }
 
-ul#navigate li:hover a {
+ul#navigate li:hover {
 	opacity: 1;
 }
 
@@ -106,6 +119,7 @@ section#primary ul li a {
 	padding-bottom: 30px;
 	border: 2px solid black;
 	border-radius: 10px;
+	background-color: white;
 	font-family: "Weltron 2001";
 	font-weight: 600;
 }
@@ -114,7 +128,7 @@ section#primary ul li:hover a {
 }
 
 section#primary ul li a:hover {
-	background-color: gray;
+	background-color: #41a8e1;
 	border-radius: 10px;
 	opacity: 1;
 }
@@ -127,7 +141,7 @@ section#primary{
 	display: block;
 	border: 1px solid black;
 	border-radius: 10px;
-	background-color: white;
+	background-color: #f5f5f5;
 }
 
 section#primary div.sectitle {
@@ -146,6 +160,10 @@ section#primary div.sectitle {
 div#master_menu ul#navigate li {
 	padding: 20px;
 	width: 75%;
+}
+
+div#master_menu { 
+	padding-bottom: 10px;
 }
 
 @media screen and (min-width: 569px) and (max-width: 1024px) {
